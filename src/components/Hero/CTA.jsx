@@ -1,11 +1,11 @@
 import React from "react";
 
 const CTA = () => (
-    <div className="flex flex-col space-y-2 pl-8 md:pl-48">
+    <div className={ctaContainerStyles}>
         <p className={headingStyles}>Want us to contact you?</p>
 
         <div className={ctaStyles}>
-            <input type="email" name="email" placeholder="Email" className={inputStyles} />
+            <input type="email" placeholder="Email" className={inputStyles} />
             <button type="submit" href="/" className={buttonStyles}>
                 Join
             </button>
@@ -14,7 +14,8 @@ const CTA = () => (
 );
 
 //! Styles
-const { ctaStyles, buttonStyles, inputStyles, headingStyles } = {
+const { ctaContainerStyles, ctaStyles, buttonStyles, inputStyles, headingStyles } = {
+    ctaContainerStyles: "flex flex-col space-y-2 pl-8 md:pl-48",
     headingStyles: "font-pops font-medium text-sm md:text-base text-gray-700",
     ctaStyles: "font-pops font-normal text-lg",
     buttonStyles:

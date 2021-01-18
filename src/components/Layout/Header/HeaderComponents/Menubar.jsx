@@ -14,7 +14,7 @@ const Menubar = ({ handleClick, isOpen }) => (
 
 //! Styles
 const { barsStyles } = {
-    barsStyles: "cursor-pointer md:hidden",
+    barsStyles: "pr-5 cursor-pointer md:hidden",
 };
 
 export default Menubar;

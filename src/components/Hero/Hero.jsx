@@ -18,4 +18,5 @@ const Hero = () => (
 const { heroStyles } = {
     heroStyles: "flex flex-col space-y-12 py-16 px-5 md:px-16",
 };
+
 export default Hero;

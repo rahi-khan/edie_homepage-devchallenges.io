@@ -10,7 +10,7 @@ const Brand = () => (
 
 //! Styles
 const { brandNameStyles } = {
-    brandNameStyles: "text-2xl font-heeb font-extrabold md:text-4xl",
+    brandNameStyles: "pl-5 md:pl-0 text-2xl font-heeb font-extrabold md:text-4xl",
 };
 
 export default Brand;
