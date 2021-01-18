@@ -1,8 +1,8 @@
 import React from "react";
-import IntroHeading from "./IntroHeading";
-import HeroImage from "./HeroImage";
-import SecondHeading from "./SecondHeading";
-import CTA from "./CTA";
+import IntroHeading from "./HeroComponents/IntroHeading";
+import HeroImage from "./HeroComponents/HeroImage";
+import SecondHeading from "./HeroComponents/SecondHeading";
+import CTA from "./HeroComponents/CTA";
 
 const Hero = () => (
     //! Render Home UI
@@ -16,7 +16,7 @@ const Hero = () => (
 
 //! Styles
 const { heroStyles } = {
-    heroStyles: "flex flex-col space-y-12 py-16 px-5 md:px-16",
+    heroStyles: "flex flex-col space-y-12 py-36 px-5 md:px-16",
 };
 
 export default Hero;

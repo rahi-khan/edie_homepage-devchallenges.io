@@ -21,7 +21,7 @@ const { ctaContainerStyles, ctaStyles, buttonStyles, inputStyles, headingStyles 
     buttonStyles:
         "rounded-lg px-6 py-2 absolute bg-blue-500 hover:bg-blue-600 text-white mt-1 -m-20.6",
     inputStyles:
-        "rounded-lg md:w-1/3 px-6 py-3 relative text-gray-600 bg-gray-100 focus:outline-none shadow-xl",
+        "rounded-lg md:w-1/3 px-6 py-3 relative text-gray-600 bg-gray-100 focus:outline-none shadow-2xl",
 };
 
 export default CTA;

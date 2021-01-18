@@ -39,7 +39,8 @@ const Header = () => {
 
 //! Styles
 const { navStyles } = {
-    navStyles: "md:px-16 h-20 flex w-full justify-between items-center relative shadow-lg",
+    navStyles:
+        "md:px-16 h-20 flex w-full justify-between items-center fixed shadow-xl z-40 bg-white",
 };
 
 export default Header;

@@ -9,7 +9,7 @@ const NavItems = ({ isOpen }) => (
     <div
         className={
             isOpen
-                ? "flex flex-col justify-center items-center text-center bg-white text-black w-full h-screen absolute top-20 md:block z-50 font-bold text-3xl"
+                ? "flex flex-col justify-center items-center space-y-7 text-center bg-white text-black w-full h-screen absolute top-20 pb-24 md:block z-50 font-bold text-3xl"
                 : "hidden md:block"
         }
     >
@@ -24,7 +24,7 @@ const NavItems = ({ isOpen }) => (
 //! Styles
 const { itemStyles } = {
     itemStyles:
-        "mb-9 font-pops font-medium text-gray-700 hover:text-black md:mb-0 md:pr-7 last:pr-0 last:mb-0 ",
+        "font-pops font-medium text-gray-700 hover:text-black md:pr-7 last:pr-0",
 };
 
 export default NavItems;
