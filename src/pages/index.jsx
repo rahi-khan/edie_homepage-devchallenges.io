@@ -9,6 +9,8 @@ const Index = () => (
         <SEO title="Home" description="Home Page" />
 
         <Hero />
+        <Hero />
+        <Hero />
     </Layout>
 );
 
