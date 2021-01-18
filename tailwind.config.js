@@ -5,6 +5,11 @@ module.exports = {
     //! media: Dark mode depends on OS
     darkMode: "media",
     theme: {
+        fontFamily: {
+            heeb: ["Heebo", "sans-serif"],
+            pops: ["Poppins", "sans-serif"],
+            monty: ["Montserrat", "sans-serif"],
+        },
         extend: {},
     },
     variants: {

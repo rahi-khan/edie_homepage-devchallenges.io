@@ -2,7 +2,6 @@ import React from "react";
 import { FaBug } from "react-icons/fa";
 import Layout from "../components/Layout/Layout";
 import SEO from "../components/SEO/seo";
-import gatsbyGif from "../images/gatsby.gif";
 
 const Home = () => (
     //! Render Home UI
@@ -10,7 +9,6 @@ const Home = () => (
         <SEO title="Home" description="Home Page" />
 
         <section className={styles.section}>
-            <img src={gatsbyGif} alt="Gatsby GIF" className={styles.image} />
 
             <h4 className={styles.header}>
                 <span className="mr-4">Good luck hacking!</span>

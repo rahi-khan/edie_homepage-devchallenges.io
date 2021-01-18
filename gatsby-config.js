@@ -1,10 +1,10 @@
 module.exports = {
     //! Site Meta Data
     siteMetadata: {
-        title: "Gatsby Tailwind Template Pro",
-        description: `A starter template for Gatsby.js projects`,
+        title: "Edie",
+        description: `Edie Homepage`,
         author: `Rahi Khan`,
-        siteUrl: `https://gatsby_tailwind_template_pro.gtsb.io/`,
+        siteUrl: `https://edie-homepage69.netlify.app/`,
     },
 
     //! External Gatsby Plugins
@@ -17,6 +17,13 @@ module.exports = {
         "gatsby-plugin-mdx",
         "gatsby-transformer-sharp",
         "gatsby-transformer-json",
+        {
+            resolve: `gatsby-plugin-google-fonts`,
+            options: {
+                fonts: [`Heebo\:800`, `Poppins\:400,500,700`, `Montserrat\:600`],
+                display: "swap",
+            },
+        },
         {
             resolve: "gatsby-source-filesystem",
             options: {
@@ -46,15 +53,15 @@ module.exports = {
         {
             resolve: "gatsby-plugin-manifest",
             options: {
-                name: `Gatsby Tailwind Template Pro`,
-                short_name: `Gatsby Tailwind Template Pro`,
-                description: `A starter template for Gatsby.js projects`,
+                name: `Edie Homepage`,
+                short_name: `Edie Homepage`,
+                description: `Edie Homepage`,
                 lang: `en`,
                 start_url: `/`,
-                background_color: `#6b37bf`,
-                theme_color: `#6b37bf`,
+                background_color: `#ffffff`,
+                theme_color: `#ffffff`,
                 display: `standalone`,
-                icon: `./src/images/icon.png`,
+                icon: `./src/images/devchallenges.png`,
             },
         },
         "gatsby-plugin-offline",
