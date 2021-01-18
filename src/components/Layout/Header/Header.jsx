@@ -24,7 +24,7 @@ const Header = () => {
 
     //? Render Header UI
     return (
-        <nav className={styles.nav}>
+        <nav className={navStyles}>
             {/*//// Brand Name/logo */}
             <Brand />
 
@@ -38,8 +38,8 @@ const Header = () => {
 };
 
 //! Styles
-const styles = {
-    nav: "md:container mx-auto h-20 flex w-full justify-between items-center relative",
+const { navStyles } = {
+    navStyles: "px-5 md:px-16 h-20 flex w-full justify-between items-center relative shadow-lg",
 };
 
 export default Header;

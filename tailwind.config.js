@@ -10,7 +10,11 @@ module.exports = {
             pops: ["Poppins", "sans-serif"],
             monty: ["Montserrat", "sans-serif"],
         },
-        extend: {},
+        extend: {
+            margin: {
+                "-20.6": "-5.6rem",
+            },
+        },
     },
     variants: {
         extend: {

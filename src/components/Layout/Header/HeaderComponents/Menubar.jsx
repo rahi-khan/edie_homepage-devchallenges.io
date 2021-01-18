@@ -5,7 +5,7 @@ import { GiSplitCross } from "react-icons/gi";
 
 const Menubar = ({ handleClick, isOpen }) => (
     //! Render Hamburger Icon
-    <div className={styles.bars} onClick={handleClick}>
+    <div className={barsStyles} onClick={handleClick}>
         <IconContext.Provider value={{ size: "1.7rem" }}>
             {isOpen ? <GiSplitCross /> : <FiMenu />}
         </IconContext.Provider>
@@ -13,8 +13,8 @@ const Menubar = ({ handleClick, isOpen }) => (
 );
 
 //! Styles
-const styles = {
-    bars: "pr-10 cursor-pointer md:hidden",
+const { barsStyles } = {
+    barsStyles: "cursor-pointer md:hidden",
 };
 
 export default Menubar;

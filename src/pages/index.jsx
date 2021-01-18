@@ -1,9 +1,17 @@
 import React from "react";
-import Home from "./home";
+import Hero from "../components/Hero/Hero";
+import Layout from "../components/Layout/Layout";
+import SEO from "../components/SEO/seo";
 
 const Index = () => (
     //! Render Home UI
-    <Home />
+    <Layout>
+        <SEO title="Home" description="Home Page" />
+
+        <Hero />
+    </Layout>
 );
+
+//! Styles
 
 export default Index;
