@@ -9,7 +9,7 @@ const NavItems = ({ isOpen }) => (
     <div
         className={
             isOpen
-                ? "flex flex-col justify-center items-center text-center bg-red-500 text-black w-full h-screen absolute top-20 md:block z-50 font-bold text-3xl"
+                ? "flex flex-col justify-center items-center text-center bg-white text-black w-full h-screen absolute top-20 md:block z-50 font-bold text-3xl"
                 : "hidden md:block"
         }
     >
