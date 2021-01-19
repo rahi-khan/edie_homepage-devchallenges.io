@@ -1,53 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useContext } from "react";
+import AppContext from "../../../context/AppContext";
 import Brand from "./HeaderComponents/Brand";
 import Menubar from "./HeaderComponents/Menubar";
 import NavItems from "./HeaderComponents/NavItems";
 
 const Header = () => {
-    //! Hamburger menu open/close state
-    const [isOpen, setisOpen] = useState(false);
-    const [height, setHeight] = useState("h-20");
-    const [HMheight, setHMHeight] = useState("top-20");
-
-    //! Styles
-    const { navStyles } = {
-        navStyles: `${height} md:px-16 flex w-full justify-between items-center fixed shadow-xl z-40 bg-white transition-all duration-300`,
-    };
-
-    //! Handle click on hamburger icon
-    const handleClick = () => setisOpen(!isOpen);
-
-    //! Run on every render
-    useEffect(() => {
-        //! Close hamubrger menu while window resizing
-        const hideMenu = () => {
-            if (isOpen === true && window.innerWidth > 768) setisOpen(false);
-        };
-
-        //! Resize header on scroll
-        const resizeHeaderOnScroll = () => {
-            const distanceY = window.pageYOffset || document.documentElement.scrollTop;
-            const shrinkOn = 200;
-
-            if (distanceY > shrinkOn) {
-                setHeight("h-12");
-                setHMHeight("top-12");
-            } else {
-                setHeight("h-20");
-                setHMHeight("top-20");
-            }
-        };
-
-        //! Add event listeners
-        window.addEventListener("resize", hideMenu);
-        window.addEventListener("scroll", resizeHeaderOnScroll);
-
-        //! Remove event listeners before every render
-        return () => {
-            window.removeEventListener("resize", hideMenu);
-            window.removeEventListener("scroll", resizeHeaderOnScroll);
-        };
-    },[]);
+    const appContext = useContext(AppContext);
+    
+    const { navStyles } = appContext;
 
     //? Render Header UI
     return (
@@ -56,10 +16,10 @@ const Header = () => {
             <Brand />
 
             {/*//// Hamburger Menu */}
-            <Menubar handleClick={handleClick} isOpen={isOpen} />
+            <Menubar />
 
             {/*//// Nav Items */}
-            <NavItems isOpen={isOpen} HMheight={HMheight} />
+            <NavItems />
         </nav>
     );
 };

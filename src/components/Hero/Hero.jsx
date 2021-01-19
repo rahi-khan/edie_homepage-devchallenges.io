@@ -5,7 +5,7 @@ import SecondHeading from "./HeroComponents/SecondHeading";
 import CTA from "./HeroComponents/CTA";
 
 const Hero = () => (
-    //! Render Home UI
+    //! Render Hero UI
     <div className={heroStyles}>
         <IntroHeading />
         <HeroImage />
