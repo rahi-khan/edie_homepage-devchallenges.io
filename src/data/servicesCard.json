@@ -1,17 +1,1 @@
-[
-    {
-        "title": "UI/UX Design",
-        "initialColor": "bg-blue-300",
-        "hoverColor": "bg-blue-500"
-    },
-    {
-        "title": "Front End",
-        "initialColor": "bg-green-300",
-        "hoverColor": "bg-green-500"
-    },
-    {
-        "title": "Back End",
-        "initialColor": "bg-red-300",
-        "hoverColor": "bg-red-500"
-    }
-]
+
