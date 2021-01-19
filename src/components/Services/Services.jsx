@@ -12,7 +12,7 @@ const Services = () => (
 
 //! Styles
 const { servicesStyles } = {
-    heroStyles: "flex flex-col space-y-12 py-36 px-5 md:px-16",
+    servicesStyles: "flex flex-col space-y-16 pb-36",
 };
 
 export default Services;

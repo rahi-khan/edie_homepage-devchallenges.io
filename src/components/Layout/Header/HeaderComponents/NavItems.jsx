@@ -7,7 +7,7 @@ const navList = ["home", "services", "our works", "clients", "contact"];
 
 const NavItems = () => {
     const appContext = useContext(AppContext);
-    
+
     const { isOpen, HMheight } = appContext;
 
     return (

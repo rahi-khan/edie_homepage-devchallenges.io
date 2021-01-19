@@ -19,7 +19,7 @@ const Index = () => (
 //! Styles
 
 const { container } = {
-    container: "container mx-auto px-28 pt-16",
+    container: "container mx-auto px-5 md:px-32 pt-16",
 };
 
 export default Index;
