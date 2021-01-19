@@ -40,14 +40,14 @@ module.exports = {
             },
             __key: "pages",
         },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `data`,
-                path: `./src/data/`,
-                ignore: [`**/\.*`], //! ignore files starting with a dot
-            },
-        },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `data`,
+        //         path: `./src/data/`,
+        //         ignore: [`**/\.*`], //! ignore files starting with a dot
+        //     },
+        // },
 
         //! "Offline-plugin" will always be after "Manifest-plugin"
         {
