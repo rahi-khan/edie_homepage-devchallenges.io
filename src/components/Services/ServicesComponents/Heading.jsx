@@ -8,7 +8,7 @@ const Heading = () => (
 
 //! Styles
 const { headingStyles } = {
-    headingStyles: "font-pops font-medium text-xl md:text-4xl text-gray-700",
+    headingStyles: "font-pops font-medium text-2xl md:text-4xl text-gray-700",
 };
 
 export default Heading;
