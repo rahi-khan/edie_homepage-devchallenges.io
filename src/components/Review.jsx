@@ -16,6 +16,7 @@ const Review = () => {
         }
     `);
 
+    //! Render review UI
     return (
         <div className={review}>
             <blockquote className={quote}>

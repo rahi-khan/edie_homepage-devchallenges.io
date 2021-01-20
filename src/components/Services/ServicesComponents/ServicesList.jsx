@@ -4,72 +4,70 @@ import { FaPencilAlt } from "react-icons/fa";
 import { HiOutlineCode } from "react-icons/hi";
 import { AiFillDatabase } from "react-icons/ai";
 
-const ServicesList = () => {
+const ServicesList = () => (
     //! Render Services List
-    return (
-        <div className={cardList}>
-            {/*//* Card 1 */}
-            <div className={card}>
-                <div className={`bg-blue-300 group-hover:bg-blue-500 ${iconStyles}`}>
-                    <IconContext.Provider value={{ size: "1.8rem" }}>
-                        <FaPencilAlt />
-                    </IconContext.Provider>
-                </div>
-
-                <h1 className={headingStyle}>UI/UX Design</h1>
-
-                <p className={descStyle}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
-                    consequat aliquet id quis turpis.
-                </p>
-
-                <button type="submit" href="/" className={buttonStyles}>
-                    Get started
-                </button>
+    <div className={cardList}>
+        {/*//* Card 1 */}
+        <div className={card}>
+            <div className={`bg-blue-300 group-hover:bg-blue-500 ${iconStyles}`}>
+                <IconContext.Provider value={{ size: "1.8rem" }}>
+                    <FaPencilAlt />
+                </IconContext.Provider>
             </div>
 
-            {/*//* Card 2 */}
-            <div className={card}>
-                <div className={`bg-green-300 group-hover:bg-green-500 ${iconStyles}`}>
-                    <IconContext.Provider value={{ size: "1.8rem" }}>
-                        <HiOutlineCode />
-                    </IconContext.Provider>
-                </div>
+            <h1 className={headingStyle}>UI/UX Design</h1>
 
-                <h1 className={headingStyle}>Front End</h1>
+            <p className={descStyle}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+                consequat aliquet id quis turpis.
+            </p>
 
-                <p className={descStyle}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
-                    consequat aliquet id quis turpis.
-                </p>
-
-                <button type="submit" href="/" className={buttonStyles}>
-                    Get started
-                </button>
-            </div>
-
-            {/*//* Card 3 */}
-            <div className={card}>
-                <div className={`bg-red-300 group-hover:bg-red-500 ${iconStyles}`}>
-                    <IconContext.Provider value={{ size: "1.8rem" }}>
-                        <AiFillDatabase />
-                    </IconContext.Provider>
-                </div>
-
-                <h1 className={headingStyle}>Back End</h1>
-
-                <p className={descStyle}>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
-                    consequat aliquet id quis turpis.
-                </p>
-
-                <button type="submit" href="/" className={buttonStyles}>
-                    Get started
-                </button>
-            </div>
+            <button type="submit" href="/" className={buttonStyles}>
+                Get started
+            </button>
         </div>
-    );
-};
+
+        {/*//* Card 2 */}
+        <div className={card}>
+            <div className={`bg-green-300 group-hover:bg-green-500 ${iconStyles}`}>
+                <IconContext.Provider value={{ size: "1.8rem" }}>
+                    <HiOutlineCode />
+                </IconContext.Provider>
+            </div>
+
+            <h1 className={headingStyle}>Front End</h1>
+
+            <p className={descStyle}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+                consequat aliquet id quis turpis.
+            </p>
+
+            <button type="submit" href="/" className={buttonStyles}>
+                Get started
+            </button>
+        </div>
+
+        {/*//* Card 3 */}
+        <div className={card}>
+            <div className={`bg-red-300 group-hover:bg-red-500 ${iconStyles}`}>
+                <IconContext.Provider value={{ size: "1.8rem" }}>
+                    <AiFillDatabase />
+                </IconContext.Provider>
+            </div>
+
+            <h1 className={headingStyle}>Back End</h1>
+
+            <p className={descStyle}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla
+                consequat aliquet id quis turpis.
+            </p>
+
+            <button type="submit" href="/" className={buttonStyles}>
+                Get started
+            </button>
+        </div>
+    </div>
+);
 
 //! styles
 const { cardList, buttonStyles, card, headingStyle, iconStyles, descStyle } = {
