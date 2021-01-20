@@ -20,6 +20,7 @@ module.exports = {
         extend: {
             padding: ["last"],
             margin: ["last"],
+            translate: ["odd"],
         },
     },
     plugins: [],

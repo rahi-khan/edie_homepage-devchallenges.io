@@ -20,7 +20,7 @@ const Review = () => {
     return (
         <div className={review}>
             <blockquote className={quote}>
-                “Fast and outstanding resutls. Edie understands their customer’s needs. They have a
+                “Fast and outstanding results. Edie understands their customer’s needs. They have a
                 young and talented team.”
             </blockquote>
 
