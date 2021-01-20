@@ -12,6 +12,9 @@ const AppState = ({ children }) => {
         navStyles: `${height} md:px-16 flex w-full justify-between items-center fixed shadow-xl z-40 bg-white transition-all duration-300`,
     };
 
+    //! Nav List
+    const navList = ["home", "services", "our works", "clients", "contact"];
+
     //! Handle click on hamburger icon
     const handleClick = () => setisOpen(!isOpen);
 
@@ -54,6 +57,7 @@ const AppState = ({ children }) => {
                 isOpen,
                 HMheight,
                 handleClick,
+                navList,
             }}
         >
             {children}

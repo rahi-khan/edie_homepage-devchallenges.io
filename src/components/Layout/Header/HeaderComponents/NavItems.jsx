@@ -2,13 +2,10 @@ import React, { useContext } from "react";
 import { Link } from "gatsby";
 import AppContext from "../../../../context/AppContext";
 
-//! Nav List
-const navList = ["home", "services", "our works", "clients", "contact"];
-
 const NavItems = () => {
     const appContext = useContext(AppContext);
 
-    const { isOpen, HMheight } = appContext;
+    const { isOpen, HMheight, navList } = appContext;
 
     return (
         //! Render Nav Lists

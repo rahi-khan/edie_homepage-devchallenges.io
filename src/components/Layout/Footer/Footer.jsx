@@ -1,33 +1,28 @@
 import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import Credit from "./FooterComponents/Credit";
+import FooterCTA from "./FooterComponents/FooterCTA";
+import Nav from "./FooterComponents/Nav";
+import Socials from "./FooterComponents/Socials";
 
-const Footer = () => {
-    //! Query Page Data
-    const data = useStaticQuery(graphql`
-        {
-            site {
-                siteMetadata {
-                    author
-                }
-            }
-        }
-    `);
-
+const Footer = () => (
     //! Render Footer UI
-    return (
-        <h6 className={styles.footer}>
-            Created by{" "}
-            <a href="https://twitter.com/rahikhan_dev" className={styles.author}>
-                {data.site.siteMetadata.author}
-            </a>
-        </h6>
-    );
-};
+    <div className={background}>
+        <div className={footer}>
+            <div className={footerContent}>
+                <Nav />
+                <Socials />
+                <FooterCTA />
+            </div>
+            <Credit />
+        </div>
+    </div>
+);
 
 //! Styles
-const styles = {
-    footer: "text-center font-semibold py-5",
-    author: "text-purple-500",
+const { background, footer, footerContent } = {
+    background: "bg-blue-600",
+    footer: "container mx-auto px-5 md:px-32 text-white",
+    footerContent: "pt-16 pb-28 grid grid-cols-1 gap-y-16 lg:gap-y-0 gap-4 lg:grid-cols-3",
 };
 
 export default Footer;
