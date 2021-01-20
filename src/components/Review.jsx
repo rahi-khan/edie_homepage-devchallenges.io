@@ -39,10 +39,10 @@ const Review = () => {
 //! Styles
 const { imgStyles, review, quote, person, personName, idkWhatToNameThis } = {
     review: "pb-36",
-    quote: "font-pops font-medium text-3xl w-full xl:w-2/3 mb-8",
+    quote: "font-pops font-medium text-xl md:text-3xl w-full xl:w-2/3 mb-8",
     imgStyles: "rounded-xl w-20 h-20 mr-6",
     person: "flex items-center",
-    personName: "text-2xl font-pops font-medium text-gray-800 mb-2",
+    personName: "text-xl md:text-2xl font-pops font-medium text-gray-800 mb-2",
     idkWhatToNameThis: "font-pops font-medium text-gray-500",
 };
 
