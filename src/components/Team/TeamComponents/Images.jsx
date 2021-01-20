@@ -5,7 +5,7 @@ import person3 from "../../../images/person3.png";
 
 const Images = () => (
     //! Render images UI
-    <div className="flex items-center justify-center md:justify-end space-x-4 md:pl-8">
+    <div className={imageContainer}>
         <img src={person3} className={img} width="40%" alt="Person 1" />
 
         <div className="flex flex-col space-y-4">
@@ -16,6 +16,9 @@ const Images = () => (
 );
 
 //! styles
-const { img } = { img: "rounded-2xl" };
+const { imageContainer, img } = {
+    imageContainer: "flex items-center justify-center md:justify-end space-x-4 md:pl-8",
+    img: "rounded-2xl",
+};
 
 export default Images;

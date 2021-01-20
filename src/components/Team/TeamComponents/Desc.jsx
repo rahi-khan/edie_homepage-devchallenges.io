@@ -15,10 +15,10 @@ const Desc = () => (
 
 //! Styles
 const { descContainer, heading1, heading2, paragraph } = {
-    descContainer: "flex flex-col justify-center space-y-4 pb-8 md:pb-0",
-    heading1: "font-pops font-medium text-lg text-red-600 text-center md:text-left",
-    heading2: "font-pops font-medium text-4xl text-center md:text-left",
-    paragraph: "font-pops font-normal text-base text-center md:text-left",
+    descContainer: "flex flex-col justify-center space-y-4 pb-8 lg:pb-0",
+    heading1: "font-pops font-medium text-lg text-red-600 text-center lg:text-left",
+    heading2: "font-pops font-medium text-4xl text-center lg:text-left",
+    paragraph: "font-pops font-normal text-base text-center lg:text-left",
 };
 
 export default Desc;

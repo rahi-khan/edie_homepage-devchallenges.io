@@ -12,7 +12,7 @@ const Team = () => (
 
 //! Styles
 const { teamStyles } = {
-    teamStyles: "flex flex-col md:flex-row md:justify-between pb-36",
+    teamStyles: "flex flex-col lg:flex-row md:justify-between pb-36",
 };
 
 export default Team;
