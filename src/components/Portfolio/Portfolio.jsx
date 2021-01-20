@@ -14,7 +14,7 @@ const Portfolio = () => {
 
 //! Styles
 const { portfolioStyles } = {
-    portfolioStyles: "flex flex-col space-y-16 pb-72",
+    portfolioStyles: "flex flex-col space-y-16 pb-36",
 };
 
 export default Portfolio;
