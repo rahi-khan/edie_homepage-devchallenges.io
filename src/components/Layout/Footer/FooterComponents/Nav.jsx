@@ -11,9 +11,7 @@ const Nav = () => {
         <div className={nav}>
             {navList.map((navItem, idx) => (
                 <Link to="/" key={idx}>
-                    <span className="capitalize hover:text-gray-300 hover:shadow-lg duration-200">
-                        {navItem}
-                    </span>
+                    <span className={navItemStyles}>{navItem}</span>
                 </Link>
             ))}
         </div>
@@ -23,6 +21,7 @@ const Nav = () => {
 //! styles
 const { nav } = {
     nav: "flex flex-col space-y-4 font-pops font-normal text-base",
+    navItemStyles: "capitalize hover:text-gray-300 hover:shadow-lg duration-200",
 };
 
 export default Nav;

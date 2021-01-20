@@ -7,8 +7,8 @@ import { FaTwitter } from "react-icons/fa";
 const Socials = () => {
     return (
         <div>
-            <h1 className="text-4xl font-heeb font-extrabold mb-3">Edie</h1>
-            <div className="flex space-x-4">
+            <h1 className={heading}>Edie</h1>
+            <div className={socialsContainer}>
                 <IconContext.Provider value={{ size: "1.5rem", className: `${socialIcons}` }}>
                     <FiInstagram />
                     <GrLinkedin />
@@ -22,6 +22,8 @@ const Socials = () => {
 //! styles
 const { socialIcons } = {
     socialIcons: "hover:text-gray-300 hover:shadow-lg duration-200 cursor-pointer",
+    socialsContainer: "flex space-x-4",
+    heading: "text-4xl font-heeb font-extrabold mb-3",
 };
 
 export default Socials;
