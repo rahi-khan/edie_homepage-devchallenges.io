@@ -5,6 +5,7 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import Review from "../components/Review";
 import SEO from "../components/SEO/seo";
 import Services from "../components/Services/Services";
+import Team from "../components/Team/Team";
 
 const Index = () => (
     //! Render Home UI
@@ -15,6 +16,7 @@ const Index = () => (
         <div className={container}>
             <Services />
             <Portfolio />
+            <Team />
             <Review />
         </div>
     </Layout>
