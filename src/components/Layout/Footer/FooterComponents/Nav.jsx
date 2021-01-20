@@ -19,7 +19,7 @@ const Nav = () => {
 };
 
 //! styles
-const { nav } = {
+const { nav, navItemStyles } = {
     nav: "flex flex-col space-y-4 font-pops font-normal text-base",
     navItemStyles: "capitalize hover:text-gray-300 hover:shadow-lg duration-200",
 };

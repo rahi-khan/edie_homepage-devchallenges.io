@@ -6,12 +6,12 @@ import AppContext from "../../../../context/AppContext";
 
 const Menubar = () => {
     const appContext = useContext(AppContext);
-    
+
     const { isOpen, handleClick } = appContext;
 
     return (
         //! Render Hamburger Icon
-        <div className={barsStyles} onClick={handleClick}>
+        <div className={barsStyles} onClick={handleClick} role="presentation">
             <IconContext.Provider value={{ size: "1.7rem" }}>
                 {isOpen ? <GiSplitCross /> : <FiMenu />}
             </IconContext.Provider>

@@ -20,7 +20,7 @@ const Socials = () => {
 };
 
 //! styles
-const { socialIcons } = {
+const { socialIcons, socialsContainer, heading } = {
     socialIcons: "hover:text-gray-300 hover:shadow-lg duration-200 cursor-pointer",
     socialsContainer: "flex space-x-4",
     heading: "text-4xl font-heeb font-extrabold mb-3",
